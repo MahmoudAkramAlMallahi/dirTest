@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".activity_add_product">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_add_product_iv_image_product"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/activity_add_product_iv_image_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-55dp"
+            android:layout_marginTop="10dp"
+            android:background="#A1FFFFFF"
+            android:src="@drawable/im__arrow" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_add_product_et_name_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="5dp"
+        android:hint="Enter Your Name Product"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/activity_add_product_et_price_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="5dp"
+        android:hint="Enter Your Price Product"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/activity_add_product_et_description_producta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="5dp"
+        android:hint="Enter Your Description Product"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_add_product_btn_save_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/activity_add_product_btn_show_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Show"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

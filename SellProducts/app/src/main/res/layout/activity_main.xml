@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layoutDirection="ltr"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textColor="#683FB1"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+    <EditText
+        android:id="@+id/main_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:drawableLeft="@drawable/ic_email"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/main_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:drawableLeft="@drawable/ic_lock_password"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/main_btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signin"
+        android:textColor="@color/blue"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/main_tv_phrase_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="15sp"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="65dp"/>
+        <TextView
+            android:id="@+id/main_tv_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textSize="15sp"
+            android:textColor="@color/blue"
+            android:layout_toRightOf="@+id/main_tv_phrase_signup"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/main_iv_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/im_main_facebook"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"/>
+        <ImageView
+            android:id="@+id/main_iv_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/im_whatsapp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

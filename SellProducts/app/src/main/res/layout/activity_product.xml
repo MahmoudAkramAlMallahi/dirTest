@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".activity_product">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/activity_product_iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/laptop"/>
+        <ImageView
+            android:id="@+id/activity_product_iv_image_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/im__arrow"
+            android:background="#A1FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-55dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/shape_layout_product_1"
+        android:padding="5dp"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/activity_product_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Name :"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/activity_product_tv_name_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/activity_product_tv_name_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Price :"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/activity_product_tv_price_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp">
+            <TextView
+                android:id="@+id/activity_product_tv_name_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Quantity >> "
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/activity_product_tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="150dp"
+            android:background="@drawable/shape_layout_product_2"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/activity_product_tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description : "
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_product_tv_description_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <Button
+                android:id="@+id/activity_product_btn_sum"
+                android:layout_width="50dp"
+                android:layout_height="73dp"
+                android:background="@drawable/shap_btn_sum"
+                android:text="+"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/activity_product_btn_subtract"
+                android:layout_width="50dp"
+                android:layout_height="73dp"
+                android:background="@drawable/shape_btn_subtract"
+                android:text="-"
+                android:textSize="30sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/activity_product_btn_add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            android:textAllCaps="false"
+            android:textSize="19sp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
